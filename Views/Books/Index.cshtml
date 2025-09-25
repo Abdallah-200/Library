@@ -1,0 +1,7 @@
+@model IEnumerable<Library.Models.Book>
+<h2>Books</h2>
+<ul>
+@foreach(var b in Model) {
+    <li>@b.Title - @b.Author?.Name</li>
+}
+</ul>
